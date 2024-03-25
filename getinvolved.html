@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Spring of Life Association Gambia</title>
+    <meta name="description" content="Solag project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        overflow: hidden;
+        margin-bottom: 30px;
+        border-left: 10px green solid;
+        border-bottom: 10px green solid;
+      }
+
+      .video-container iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 70px;
+      }
+      .container p {
+        padding: 30px;
+        line-height: 2;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      li {
+        font-size: 25px;
+      }
+
+      @media (max-width: 500px) {
+        h1 {
+          text-align: center;
+          font-size: 35px;
+          padding-top: 50px;
+        }
+        p {
+          font-size: 20px;
+          padding: 10px;
+          line-height: 1;
+        }
+        li {
+          font-size: 17px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top nav -->
+    <header class="site-header">
+      <div class="solag-logo-container">
+        <img
+          class="solag-logo"
+          src="C:\Users\agnie\Downloads\download-removebg-preview.png"
+          alt="solag Logo"
+        />
+      </div>
+
+      <!-- Hamburger Menu Icon -->
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html" class="main-nav-element">Who we are</a></li>
+          <li>
+            <a href="whatwedo.html" class="main-nav-element">What we do</a>
+          </li>
+          <li class="dropdown">
+            <a href="gallery.html" class="main-nav-element dropdown-toggle"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a href="getinvolved.html" class="main-nav-element">Get involved</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="buttonAndBurgerbutton">
+        <div class="button-frame">
+          <a href="#" class="button main-cta oswald" id="donate-btn"
+            >Donate now</a
+          >
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form action="" class="myform">
+            <label for="firstName">First Name:</label><br />
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Enter first name"
+              required
+            /><br />
+
+            <label for="lastName">Last Name:</label><br />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Enter last name"
+              required
+            /><br />
+
+            <label for="accountNumber">Account Number:</label><br />
+            <input
+              type="text"
+              id="accountNumber"
+              name="accountNumber"
+              placeholder="Enter account number"
+              required
+            /><br />
+
+            <label for="cvv">CVV:</label><br />
+            <input
+              type="password"
+              id="cvv"
+              name="cvv"
+              placeholder="Enter CVV"
+              required
+            /><br />
+            <label for="amount">Card Number:</label><br />
+            <input
+              type="number"
+              name="Card number"
+              placeholder="Enter your card number"
+              max="100000000"
+              required
+            /><br />
+            <label for="Expiry datet">Expiry date:</label><br />
+            <input
+              type="date"
+              name="Expiry date"
+              max="100000000"
+              required
+            /><br />
+            <label for="amount">Amount:</label><br />
+            <input
+              type="number"
+              id="amount"
+              name="amount"
+              placeholder="Enter amount"
+              max="100000000"
+              required
+            /><br />
+
+            <button class="modal-button" type="submit">Donate</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- Main content -->
+    <body>
+      <div>
+        <div class="container">
+          <h1>How could you help us to build the future:</h1>
+
+          <ul>
+            <li>Donate financially using our ‘Donate now’ buttons</li>
+            <li>
+              Sponsor a child for 100GBP a year – contact us for details Donate
+              football kits (boots, jerseys, balls, socks, etc.)
+            </li>
+            <li>
+              Help us to develop our IT facilities so we could connect remotely
+              and organize online classes where you could teach our children
+              what is a subject of your expertise!
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="video-container">
+        <iframe
+          src="https://player.vimeo.com/video/926472352?h=096d85d41e"
+          width="640"
+          height="360"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </body>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <footer class="site-footer">
+          <div class="footer-content">
+            <section class="contact-info">
+              <h3>Contact Us</h3>
+              <p>Email: springoflifea@gmail.com</p>
+              <p>Phone: +447523280683 / 
+                        +2209959890</p>
+                        <p>Address: Spring of Life Association Gambia (SOLAG)<br>
+                          Sinchu Alagie<br>
+                          West Coast Region<br>
+                          P.O.Box 2562<br>
+                          The Gambia</p>
+            </section>
+            <section class="social-media">
+              <h3>Follow Us</h3>
+              <a href="https://www.facebook.com/SpringofLifeAssociationGambia/">Facebook</a> |
+              <a href="https://www.instagram.com/solag2003?igsh=NHJ6eHlmYWgyb3Iw">Instagram</a>
+            </section>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Spring of Life Association Gambia. All rights reserved.</p>
+          </div>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        var mainNav = document.getElementById("main-nav");
+        mainNav.classList.toggle("collapsing");
+      }
+
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("donate-btn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
