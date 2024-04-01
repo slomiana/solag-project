@@ -6,50 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <style>
-        .custom-padding {
-            padding: 10px; /* Adjust the padding size as per your requirement */
-        }
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
-            transition: transform 0.3s ease;
-            display: block;
-            margin: 0 auto; /* Center the image horizontally */
-        }
-        .img-fluid.enlarged {
-            transform: scale(5);
-        }
-        .row {
-            display: flex;
-            justify-content: center; /* Center the columns horizontally */
-        }
-    
-    </style>
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Spring of Life Association Gambia</title>
-    <meta name="description" content="Solag project" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Flavors&display=swap"
-   rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Flavors&family=Fredericka+the+Great&display=swap"
-    rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Dekko&family=Flavors&family=Fredericka+the+Great&display=swap"
-    rel="stylesheet"
-     />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <link href="styles.css" rel="stylesheet" />
+    <link href="gallery.css" rel="stylesheet" />
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Spring of Life Association Gambia</title>
+  <meta name="description" content="Solag project" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link href="styles.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -88,133 +58,159 @@
           </div>
           <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
         </div>
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <form action="" class="myform">
-              <label for="firstName">First Name:</label><br />
-              <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                placeholder="Enter first name"
-                required
-              /><br />
-  
-              <label for="lastName">Last Name:</label><br />
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                placeholder="Enter last name"
-                required
-              /><br />
-  
-              <label for="accountNumber">Account Number:</label><br />
-              <input
-                type="text"
-                id="accountNumber"
-                name="accountNumber"
-                placeholder="Enter account number"
-                required
-              /><br />
-  
-              <label for="cvv">CVV:</label><br />
-              <input
-                type="password"
-                id="cvv"
-                name="cvv"
-                placeholder="Enter CVV"
-                required
-              /><br />
-              <label for="amount">Card Number:</label><br />
-              <input
-                type="number"
-                name="Card number"
-                placeholder="Enter your card number"
-                max="100000000"
-                required
-              /><br />
-              <label for="Expiry datet">Expiry date:</label><br />
-              <input
-                type="date"
-                name="Expiry date"
-                max="100000000"
-                required
-              /><br />
-              <label for="amount">Amount:</label><br />
-              <input
-                type="number"
-                id="amount"
-                name="amount"
-                placeholder="Enter amount"
-                max="100000000"
-                required
-              /><br />
-  
-              <button class="modal-button" type="submit">Donate</button>
-            </form>
-          </div>
-        </div>
       </header>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-            <div class="col custom-padding">
-                <img src="https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="...">
-            </div>
-        </div>
+   <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb0V94TzPQRS-6PA3cPLkC1UZunzrKY4QRI988cE5maAFRBEE6jqh5RNQkc8dheJe9adP39uUKv435yysGpAjGIEk4fqg=s1600" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYwUiPz48b_soahXWNqET5YExyW5q5H7rjQeKFrNmk-z2ZeKj3JRGmGurU3nmSm32TM7hKiZuFbdwJCKTt3nss_Fhfs=s1600" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ0Lydq2UsgVjOEmW0-CM2S3mWod6m1PZFPU9MUoqPey_Mh1q6PQcGCdpph9fKW-FzIU26bcouCRovK3mirrtyjhdTi=s1600" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZjWGjgnwzFyPsk10Q7eR9M0MqrJJjIY2zTaOI7Z58IVVZdlimYKBHCx44mGyVQjuZZD-ynu8vZlbxIxy9NkuC6cgcSfA=s1600" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihY5nB8G-urh0FSt327VDhYssdCBkFIe2nbaEUClpM6XOwf61uaPCt7DTfwWE-m4Xm4Rd8COYO56zKea6lOLJNgW9C2g=s1600" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZU6s-RYoEbJx9Ji8jFhcTqXhYAbAjXIlV2fKDTkrkR7HBE4R8mUx83nXEQTAuvL0jxaPV8GYgmCFVvn_Q0Jrfx2o0xLA=s1600" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaezLeRo9ZA8iQQZs_CFJmRoILAFqk3Fyb5J0e43_ymyfQJCl8cMcTIy_92iNj94FyY3MFm8cTfeDo6csqy_xjqRdOOFA=s1600" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihacttvvR8g15aGLKhqTtUGi6b-XzghZ8RMjZxsWSrVuUV0wA8k2DJpkqaIDT_iTnWgxcdx6o0mDZ3_k8FwvyaZiC1oQ=s1600" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYBNqSrgZxD1rQzAKWN4qsJLN9alZ1SMnXOqrML8PPA2xiSDabJITLDwDe7Ka7j-JbPRRJ8EFTJ5xAMaz_iziuRyFP4FA=s1600" onclick="openModal();currentSlide(9)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbs5zdO15bqi2dVa11uSsbCF3DUqFKpy8hbi1yve5g04XfE3qaZWATzBBLF0cgqPOZKuT0XOI8KsxiN1jzcG5B7Nc4c8w=s1600" onclick="openModal();currentSlide(10)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYq1uHoH314M9pd6ayfIsDQxQDRuAXt9g6M74YcujrE93TyQuR1PcQGCrABStISaP9VCvCTTo2MREv5vPFh6Xo7Dw8U=s1600" onclick="openModal();currentSlide(11)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb0v_BMu7vFcvByiJ88j-4nLrX34Phz_PeZk9zURh_CkEPQMfzvVAB8nQLOoho6WLrO7Z-nfqth1hM6IdD6yyxR_qfp=s1600" onclick="openModal();currentSlide(12)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbb-zQBUqEyqPXrnghokwJtnAVf8Yrb6KaW1YGYa0UHf0U3bT15cM26b_RO6bnztIgwVbYTN5dBqm6ZQljV-7igwfdB6A=s1600" onclick="openModal();currentSlide(13)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbOGu4EtDL_5dCKBYVibycxLhHthQV06Do-KchT6XcqTcWUKLejaoFyLzbKfdq9CjJZ6K9UrAPB68Vgho54v0z3nWRH=s1600" onclick="openModal();currentSlide(14)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZcx4czNb8qMMAXA7OiqBJ95DP0f21HCJqTPnSOa3vAjqTnAFXTDKSdqcsXJ2Fvi7DARsuW6uWKhUNLT2dT9ibb8TPLFg=s1600" onclick="openModal();currentSlide(15)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYqbVzcAfb1Ga8Ux6iKcBzgpiLwOcasnBmLKxZrJmXk-WIcyqxArY-074Iv6LwfLSRZSKuXfrJwgViIvrMeUnJnfKn6=s1600" onclick="openModal();currentSlide(16)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbOc5v4lFU8HVIsWVtExdOV8qMHb_gTg1kCvlqaRIbRf4q_V4gCXeVoikErqJKtDnNdsDRatJZ8yaSURmtJdpob1WB2Iw=s1600" onclick="openModal();currentSlide(17)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihY-QLjRsvA_ml__eY3kcP8uq4vvnJ2bFKbeSLEgeRPNWZu-U1E4_RSXptR1Qeno8GnF1ihSLAED63BV2FEpmSlZg0qebQ=s1600" onclick="openModal();currentSlide(18)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCqnrIENfPKbbra1vhir14KJfHA_2sjXQ5SOVb4YXHzX-0Os7Z_DVUuPBfUsH_ed8Ct_R6naTLFHLTGBd9Df7-L9Evgw=s1600" onclick="openModal();currentSlide(19)" class="hover-shadow">
+  </div> <div class="col">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihY_LGyJVgZcpy4gQcQsSnSOvVbMI4KL-leHZFgHtwZJ8DLZxusb3bxZs1ZMqtM6Z6YhAX2-R3hiYSJt6KuY2FXnVFVZxA=s1600" onclick="openModal();currentSlide(20)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYwFeKBwQGYPlM6roD5O3o_lET-rzP0D5umEmdAe-G2MS1YqZNf9nl-6Yhkf7FkdhEMHxTr67QaxkKz9iyEVnSPt5BLVw=s1600" style="width:100%">
     </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYwUiPz48b_soahXWNqET5YExyW5q5H7rjQeKFrNmk-z2ZeKj3JRGmGurU3nmSm32TM7hKiZuFbdwJCKTt3nss_Fhfs=s1600" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ0Lydq2UsgVjOEmW0-CM2S3mWod6m1PZFPU9MUoqPey_Mh1q6PQcGCdpph9fKW-FzIU26bcouCRovK3mirrtyjhdTi=s1600" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZjWGjgnwzFyPsk10Q7eR9M0MqrJJjIY2zTaOI7Z58IVVZdlimYKBHCx44mGyVQjuZZD-ynu8vZlbxIxy9NkuC6cgcSfA=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihY5nB8G-urh0FSt327VDhYssdCBkFIe2nbaEUClpM6XOwf61uaPCt7DTfwWE-m4Xm4Rd8COYO56zKea6lOLJNgW9C2g=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZU6s-RYoEbJx9Ji8jFhcTqXhYAbAjXIlV2fKDTkrkR7HBE4R8mUx83nXEQTAuvL0jxaPV8GYgmCFVvn_Q0Jrfx2o0xLA=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaezLeRo9ZA8iQQZs_CFJmRoILAFqk3Fyb5J0e43_ymyfQJCl8cMcTIy_92iNj94FyY3MFm8cTfeDo6csqy_xjqRdOOFA=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihacttvvR8g15aGLKhqTtUGi6b-XzghZ8RMjZxsWSrVuUV0wA8k2DJpkqaIDT_iTnWgxcdx6o0mDZ3_k8FwvyaZiC1oQ=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYBNqSrgZxD1rQzAKWN4qsJLN9alZ1SMnXOqrML8PPA2xiSDabJITLDwDe7Ka7j-JbPRRJ8EFTJ5xAMaz_iziuRyFP4FA=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">10 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbs5zdO15bqi2dVa11uSsbCF3DUqFKpy8hbi1yve5g04XfE3qaZWATzBBLF0cgqPOZKuT0XOI8KsxiN1jzcG5B7Nc4c8w=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">11 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYq1uHoH314M9pd6ayfIsDQxQDRuAXt9g6M74YcujrE93TyQuR1PcQGCrABStISaP9VCvCTTo2MREv5vPFh6Xo7Dw8U=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">12 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb0v_BMu7vFcvByiJ88j-4nLrX34Phz_PeZk9zURh_CkEPQMfzvVAB8nQLOoho6WLrO7Z-nfqth1hM6IdD6yyxR_qfp=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">13 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbb-zQBUqEyqPXrnghokwJtnAVf8Yrb6KaW1YGYa0UHf0U3bT15cM26b_RO6bnztIgwVbYTN5dBqm6ZQljV-7igwfdB6A=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">14 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbOGu4EtDL_5dCKBYVibycxLhHthQV06Do-KchT6XcqTcWUKLejaoFyLzbKfdq9CjJZ6K9UrAPB68Vgho54v0z3nWRH=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">15 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZcx4czNb8qMMAXA7OiqBJ95DP0f21HCJqTPnSOa3vAjqTnAFXTDKSdqcsXJ2Fvi7DARsuW6uWKhUNLT2dT9ibb8TPLFg=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">16 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYqbVzcAfb1Ga8Ux6iKcBzgpiLwOcasnBmLKxZrJmXk-WIcyqxArY-074Iv6LwfLSRZSKuXfrJwgViIvrMeUnJnfKn6=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">17 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbOc5v4lFU8HVIsWVtExdOV8qMHb_gTg1kCvlqaRIbRf4q_V4gCXeVoikErqJKtDnNdsDRatJZ8yaSURmtJdpob1WB2Iw=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">18 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihY-QLjRsvA_ml__eY3kcP8uq4vvnJ2bFKbeSLEgeRPNWZu-U1E4_RSXptR1Qeno8GnF1ihSLAED63BV2FEpmSlZg0qebQ=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">19 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCqnrIENfPKbbra1vhir14KJfHA_2sjXQ5SOVb4YXHzX-0Os7Z_DVUuPBfUsH_ed8Ct_R6naTLFHLTGBd9Df7-L9Evgw=s1600" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">20 / 20</div>
+      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihY_LGyJVgZcpy4gQcQsSnSOvVbMI4KL-leHZFgHtwZJ8DLZxusb3bxZs1ZMqtM6Z6YhAX2-R3hiYSJt6KuY2FXnVFVZxA=s1600" style="width:100%">
+    </div>
+  </div>  
+   
+
+
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+   
      <!-- Footer -->
      <footer class="site-footer">
         <div class="footer-content">
@@ -239,51 +235,47 @@
           <p>&copy; 2024 Spring of Life Association Gambia. All rights reserved.</p>
         </div>
       </footer>
-      <script>
-        // Function to open a new page with content "Test" - change it to open a new page in the same tab to avoid opening multiple tabs //
-        function toggleMenu() {
-          var mainNav = document.getElementById("main-nav");
-          mainNav.classList.toggle("collapsing");
-        }
-  
-        // Get the modal element
-        var modal = document.getElementById("myModal");
-  
-        // Get the button that opens the modal
-        var btn = document.getElementById("donate-btn");
-  
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-  
-        // When the user clicks the button, open the modal
-        btn.onclick = function () {
-          modal.style.display = "block";
-        };
-  
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-          modal.style.display = "none";
-        };
-  
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        };
-      </script>
-    </body>
-  </html>
-  
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $(".img-fluid").click(function(){
-            $(this).toggleClass("enlarged");
-        });
-    });
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 </script>
 </body>
 </html>
