@@ -1,195 +1,404 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Spring of Life Association Gambia</title>
-    <meta name="description" content="Solag project" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" href="icon.png" />
-    <link href="styles.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Spring of Life Association Gambia</title>
+  <meta name="description" content="Solag project" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link href="styles.css" rel="stylesheet" />
 </head>
 <style>
-.video-container {
-position: relative;
-width: 100%;
-padding-bottom: 56.25%; /* 16:9 aspect ratio */
-overflow: hidden;
-margin-bottom: 30px;
-border-left: 10px green solid;
-border-bottom: 10px green solid;
-}
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-left: 10px green solid;
+    border-bottom: 10px green solid;
+  }
 
-.video-container iframe {
+  .video-container iframe {
 
-width: 100%;
-height: 100%;
-}
+    width: 100%;
+    height: 100%;
+  }
 
-h1{
-text-align: center;
-font-size: 40px;
-padding-top:70px;
-}
-.container p{
-padding: 30px;
-line-height:2;
-font-size:30px;
-font-weight:700;
-}
-li{
-font-size: 25px;
-}
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 70px;
+  }
 
-@media (max-width: 500px) {
-h1{
-text-align: center;
-font-size: 35px;
-padding-top:50px;
-}
-p{
-font-size:20px;
-padding: 10px;
-line-height:1;
-}
-li{
-font-size: 17px;
-}
-}
+  .container p {
+    padding: 30px;
+    line-height: 2;
+    font-size: 30px;
+    font-weight: 700;
+  }
 
+  li {
+    font-size: 25px;
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      text-align: center;
+      font-size: 35px;
+      padding-top: 50px;
+    }
+
+    p {
+      font-size: 20px;
+      padding: 10px;
+      line-height: 1;
+    }
+
+    li {
+      font-size: 17px;
+    }
+  }
 </style>
 </head>
-<body><!-- Top nav --><header class="site-header">
-<div class="solag-logo-container">
-<img class="solag-logo" src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZCdYmqOr8yZSrcm3GkZs-9XoYh0bftIEyN6KLu_V6-TQS9HTfq2H5zo6P_5JvXiLoYgWqMZawB1YPmviFcrU0P9fLGlA=s2560" alt="solag Logo">
 
-</div>
-<!-- Hamburger Menu Icon -->
+<body><!-- Top nav -->
+  <header class="site-header">
+    <div class="solag-logo-container">
+      <img class="solag-logo"
+        src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZCdYmqOr8yZSrcm3GkZs-9XoYh0bftIEyN6KLu_V6-TQS9HTfq2H5zo6P_5JvXiLoYgWqMZawB1YPmviFcrU0P9fLGlA=s2560"
+        alt="solag Logo">
 
-<nav class="main-nav" id="main-nav">
-  <ul>
-      <li><a href="index.html" class="main-nav-element">Who we are</a></li>
-      <li><a href="whatwedo.html" class="main-nav-element">What we do</a></li>
-      <li class="dropdown">
+    </div>
+    <!-- Hamburger Menu Icon -->
+
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html" class="main-nav-element">Who we are</a></li>
+        <li><a href="whatwedo.html" class="main-nav-element">What we do</a></li>
+        <li class="dropdown">
           <a href="gallery.html" class="main-nav-element dropdown-toggle">Gallery</a>
-      </li>
-      <li><a href="getinvolved.html" class="main-nav-element">Get involved</a></li>
-  </ul>
-</nav>
-<div class="buttonAndBurgerbutton">
-    <div class="button-frame">
+        </li>
+        <li><a href="getinvolved.html" class="main-nav-element">Get involved</a></li>
+      </ul>
+    </nav>
+    <div class="buttonAndBurgerbutton">
+      <div class="button-frame">
         <a href="#" class="button main-cta oswald" id="donate-btn">Donate now</a>
+      </div>
+      <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
     </div>
-    <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
-</div>
-<div id="myModal" class="modal">
-    <div class="modal-content">
+    <div id="myModal" class="modal">
+      <div class="modal-content">
         <span class="close">&times;</span>
-        <form action="" class="myform">
-            <label for="firstName">First Name:</label><br>
-            <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required><br>
-            
-            <label for="lastName">Last Name:</label><br>
-            <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required><br>
-            
-            <label for="accountNumber">Account Number:</label><br>
-            <input type="text" id="accountNumber" name="accountNumber" placeholder="Enter account number" required><br>
-            
-            <label for="cvv">CVV:</label><br>
-            <input type="password" id="cvv" name="cvv" placeholder="Enter CVV" required><br>
-            <label for="amount">Card Number:</label><br>
-            <input type="number"  name="Card number" placeholder="Enter your card number" max="100000000" required><br>
-            <label for="Expiry datet">Expiry date:</label><br>
-            <input type="date"  name="Expiry date"  max="100000000" required><br>
-            <label for="amount">Amount:</label><br>
-            <input type="number" id="amount" name="amount" placeholder="Enter amount" max="100000000" required><br>
-            
-            <button class="modal-button" type="submit">Donate</button>
+        <form class="myform" id="donationForm" onsubmit="return validateForm()">
+
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name">
+            <small id="firstNameError" class="text-danger">
+
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter last name">
+            <small id="lastNameError" class="text-danger"></small>
+          </div>
+          <div class="form-group">
+            <label for="accountNumber">Account Number:</label>
+            <input type="number" class="form-control" id="accountNumber" name="accountNumber"
+              placeholder="Enter account" maxlength="10">
+            <small id="accountNumberError" class="text-danger"></small>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="password" class="form-control" id="cvv" name="cvv" placeholder="Enter CVV">
+            <small id="cvvError" class="text-danger" maxlength="5"></small>
+          </div>
+          <div class="form-group">
+            <label for="cardNumber">Card Number:</label>
+            <input type="number" class="form-control" id="cardNumber" name="cardNumber" maxlength="19"
+              placeholder="Enter your card number">
+            <small id="cardNumberError" class="text-danger"></small>
+          </div>
+          <div class="form-group">
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="date" class="form-control" id="expiryDate" name="expiryDate">
+            <small id="expiryDateError" class="text-danger"></small>
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter amount">
+            <small id="amountError" class="text-danger"></small>
+          </div>
+          <button class="modal-button" type="submit">Donate</button>
         </form>
-        
+      </div>
     </div>
-</div>
-</header><body>
-<div class="container">
-<h1>" We are passionate about empowering and transforming the lives of children and young people in The Gambia through education and sports."</h1>
-<p class="notes">Our Aim:</p>
-<ul>
-    <li>To play a quota in national development through the provision and support of educational and sporting activities through service delivery and advocacy. This will be supported by the following three underlining principles:</li>
-    <li>A commitment to preparing children and young people for participation</li>
-    <li>Promoting acceptance and understanding of others </li>
-    <li>Development of appropriate values and beliefs.</li>
-  </ul>
+  </header>
 
-<p class="notes">Objectives:</p>
-<ul>
-    <li>Encourage children and young people to participate in a wide range of activities appropriate to their age and stage of development</li>
-    <li>Assist children and young people in their personal and social development to</li>
-    <li> Encourage growth in self-esteem and confidence and help them learn from their experiences and cope with positive and negative feedbacks critical to their wellbeing</li>
-    <li>Always Promoting the welfare and safety of children and young people, especially the disadvantaged and to unearth the talents and skills of individuals for self-development.</li>
-  </ul>
-</div> <div class="video-container">
-<iframe src="https://player.vimeo.com/video/926471410?h=6882b94940" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-</div> </body><!-- Footer -->
-<footer class="site-footer">
+  <body>
+    <div class="container">
+      <h1>" We are passionate about empowering and transforming the lives of children and young people in The Gambia
+        through education and sports."</h1>
+      <p class="notes">Our Aim:</p>
+      <ul>
+        <li>To play a quota in national development through the provision and support of educational and sporting
+          activities through service delivery and advocacy. This will be supported by the following three underlining
+          principles:</li>
+        <li>A commitment to preparing children and young people for participation</li>
+        <li>Promoting acceptance and understanding of others </li>
+        <li>Development of appropriate values and beliefs.</li>
+      </ul>
+
+      <p class="notes">Objectives:</p>
+      <ul>
+        <li>Encourage children and young people to participate in a wide range of activities appropriate to their age
+          and stage of development</li>
+        <li>Assist children and young people in their personal and social development to</li>
+        <li> Encourage growth in self-esteem and confidence and help them learn from their experiences and cope with
+          positive and negative feedbacks critical to their wellbeing</li>
+        <li>Always Promoting the welfare and safety of children and young people, especially the disadvantaged and to
+          unearth the talents and skills of individuals for self-development.</li>
+      </ul>
+    </div>
+    <div class="video-container">
+      <iframe src="https://player.vimeo.com/video/926471410?h=6882b94940" width="640" height="360" frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </body><!-- Footer -->
+  <footer class="site-footer">
     <footer class="site-footer">
-        <div class="footer-content">
-          <section class="contact-info">
-            <h3>Contact Us</h3>
-            <p>Email: springoflifea@gmail.com</p>
-            <p>Phone: +447523280683 / 
-                      +2209959890</p>
-                      <p>Address: Spring of Life Association Gambia (SOLAG)<br>
-                        Sinchu Alagie<br>
-                        West Coast Region<br>
-                        P.O.Box 2562<br>
-                        The Gambia</p>
-          </section>
-          <section class="social-media">
-            <h3>Follow Us</h3>
-            <a href="https://www.facebook.com/SpringofLifeAssociationGambia/">Facebook</a> |
-            <a href="https://www.instagram.com/solag2003?igsh=NHJ6eHlmYWgyb3Iw">Instagram</a>
-          </section>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2024 Spring of Life Association Gambia. All rights reserved.</p>
-        </div>
-</footer><script>
-// Function to open a new page with content "Test" - change it to open a new page in the same tab to avoid opening multiple tabs //
-function toggleMenu() {
-var mainNav = document.getElementById('main-nav');
-mainNav.classList.toggle('collapsing');
-}
+      <div class="footer-content">
+        <section class="contact-info">
+          <h3>Contact Us</h3>
+          <p>Email: springoflifea@gmail.com</p>
+          <p>Phone: +447523280683 /
+            +2209959890</p>
+          <p>Address: Spring of Life Association Gambia (SOLAG)<br>
+            Sinchu Alagie<br>
+            West Coast Region<br>
+            P.O.Box 2562<br>
+            The Gambia</p>
+        </section>
+        <section class="social-media">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/SpringofLifeAssociationGambia/">Facebook</a> |
+          <a href="https://www.instagram.com/solag2003?igsh=NHJ6eHlmYWgyb3Iw">Instagram</a>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Spring of Life Association Gambia. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      // Function to open a new page with content "Test" - change it to open a new page in the same tab to avoid opening multiple tabs //
+      function toggleMenu() {
+        var mainNav = document.getElementById('main-nav');
+        mainNav.classList.toggle('collapsing');
+      }
 
-// Get the modal element
-var modal = document.getElementById("myModal");
+      // Get the modal element
+      var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("donate-btn");
+      // Get the button that opens the modal
+      var btn = document.getElementById("donate-btn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-modal.style.display = "block";
-}
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-modal.style.display = "none";
-}
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-if (event.target == modal) {
-modal.style.display = "none";
-}
-}
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+
+      // Get the modal element
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("donate-btn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      }
 
 
-</script></body>
-</html><!-- <h1>"We are passionate about empowering and transforming the lives of children and young people in The Gambia through education and sport
+      // Get the button that opens the modal
+      var btn2 = document.getElementById("donate-btn2");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn2.onclick = function () {
+        modal.style.display = "block";
+      }
+
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+
+
+      document.getElementById('firstName').addEventListener('input', function () {
+        validateForm();
+      });
+
+      document.getElementById('lastName').addEventListener('input', function () {
+        validateForm();
+      });
+
+
+      document.getElementById('accountNumber').addEventListener('input', function () {
+        validateForm();
+      });
+
+      document.getElementById('cvv').addEventListener('input', function () {
+        validateForm();
+      });
+
+      document.getElementById('cardNumber').addEventListener('input', function () {
+        validateForm();
+      });
+
+      document.getElementById('expiryDate').addEventListener('input', function () {
+        validateForm();
+      });
+
+      document.getElementById('amount').addEventListener('input', function () {
+        validateForm();
+      });
+
+
+
+      // validation function
+      function validateForm() {
+        //getting the form element
+        var form = document.getElementById('donationForm');
+
+
+        //getting values from the form
+        var firstName = form.elements['firstName'].value;
+        var lastName = form.elements['lastName'].value;
+        var accountNumber = form.elements['accountNumber'].value;
+        var cvv = form.elements['cvv'].value;
+        var cardNumber = form.elements['cardNumber'].value;
+        var expiryDate = form.elements['expiryDate'].value;
+        var amount = form.elements['amount'].value;
+
+        //tracking form validation state
+        var isValid = true;
+
+        if (firstName.trim() === '') {
+          document.getElementById('firstNameError').textContent = 'First Name is required';
+          isValid = false;
+        } else {
+          document.getElementById('firstNameError').textContent = '';
+        }
+
+        if (lastName.trim() === '') {
+          document.getElementById('lastNameError').textContent = 'Last Name is required';
+          isValid = false;
+        } else {
+          document.getElementById('lastNameError').textContent = '';
+        }
+
+        if (accountNumber.trim() === '') {
+          document.getElementById('accountNumberError').textContent = 'Account Number is required';
+          isValid = false;
+        } else if (accountNumber.length < 10) {
+          document.getElementById('accountNumberError').textContent = 'Account Number should be 10 digits';
+          isValid = false;
+        }
+        else {
+          document.getElementById('accountNumberError').textContent = '';
+        }
+
+        if (cvv.trim() === '') {
+          document.getElementById('cvvError').textContent = 'CVV is required';
+          isValid = false;
+        } else if (cvv.length < 3 || cvv.length > 5) {
+          document.getElementById('cvvError').textContent = 'CVV should be between 3 and 5 digits';
+          isValid = false;
+        }
+        else {
+          document.getElementById('cvvError').textContent = '';
+        }
+
+        if (cardNumber.trim() === '') {
+          document.getElementById('cardNumberError').textContent = 'Card Number is required';
+          isValid = false;
+        } else if (cardNumber.length < 16 || cardNumber.length > 19) {
+          document.getElementById('cardNumberError').textContent = 'Card Number should be between 16 and 19 digits';
+          isValid = false;
+        }
+        else {
+          document.getElementById('cardNumberError').textContent = '';
+        }
+
+        var currentDate = new Date();
+        var expiredDateToDate = new Date(expiryDate);
+
+
+        console.log(currentDate);
+
+
+        if (expiryDate.trim() === '') {
+          document.getElementById('expiryDateError').textContent = 'Expiry Date is required';
+          isValid = false;
+        } else if (currentDate > expiredDateToDate) {
+          document.getElementById('expiryDateError').textContent = 'Expiry Date should be in the future';
+          isValid = false;
+        }
+        else {
+          document.getElementById('expiryDateError').textContent = '';
+        }
+
+        if (amount.trim() === '') {
+          document.getElementById('amountError').textContent = 'Amount is required';
+          isValid = false;
+        } else {
+          document.getElementById('amountError').textContent = '';
+        }
+
+        return isValid;
+      }
+
+
+    </script>
+</body>
+
+</html>
+<!-- <h1>"We are passionate about empowering and transforming the lives of children and young people in The Gambia through education and sport

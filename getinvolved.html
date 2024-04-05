@@ -1,224 +1,208 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Spring of Life Association Gambia</title>
-    <meta name="description" content="Solag project" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" href="icon.png" />
-    <link href="styles.css" rel="stylesheet" />
-  
-    <style>
-      .video-container {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        overflow: hidden;
-        margin-bottom: 30px;
-        border-left: 10px green solid;
-        border-bottom: 10px green solid;
-      }
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Spring of Life Association Gambia</title>
+  <meta name="description" content="Solag project" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link href="styles.css" rel="stylesheet" />
 
-      .video-container iframe {
-        width: 100%;
-        height: 100%;
-      }
+  <style>
+    .video-container {
+      position: relative;
+      width: 70%;
+      height: 80vh;
+      /* padding-bottom: 56.25%; */
+      /* 16:9 aspect ratio */
+      overflow: hidden;
+      margin-bottom: 30px;
+      border-left: 10px green solid;
+      border-bottom: 10px green solid;
+    }
 
+    .temp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      padding-top: 70px;
+    }
+
+    .container p {
+      padding: 30px;
+      line-height: 2;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    li {
+      font-size: 25px;
+    }
+
+    @media (max-width: 500px) {
       h1 {
         text-align: center;
-        font-size: 40px;
-        padding-top: 70px;
+        font-size: 35px;
+        padding-top: 50px;
       }
-      .container p {
-        padding: 30px;
-        line-height: 2;
-        font-size: 30px;
-        font-weight: 700;
+
+      p {
+        font-size: 20px;
+        padding: 10px;
+        line-height: 1;
       }
+
       li {
-        font-size: 25px;
+        font-size: 17px;
       }
+    }
+  </style>
+</head>
 
-      @media (max-width: 500px) {
-        h1 {
-          text-align: center;
-          font-size: 35px;
-          padding-top: 50px;
-        }
-        p {
-          font-size: 20px;
-          padding: 10px;
-          line-height: 1;
-        }
-        li {
-          font-size: 17px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Top nav -->
-    <header class="site-header">
-      <div class="solag-logo-container">
-        <img class="solag-logo" src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZCdYmqOr8yZSrcm3GkZs-9XoYh0bftIEyN6KLu_V6-TQS9HTfq2H5zo6P_5JvXiLoYgWqMZawB1YPmviFcrU0P9fLGlA=s2560" alt="solag Logo">
+<body>
+  <!-- Top nav -->
+  <header class="site-header">
+    <div class="solag-logo-container">
+      <img class="solag-logo"
+        src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZCdYmqOr8yZSrcm3GkZs-9XoYh0bftIEyN6KLu_V6-TQS9HTfq2H5zo6P_5JvXiLoYgWqMZawB1YPmviFcrU0P9fLGlA=s2560"
+        alt="solag Logo">
 
+    </div>
+
+    <!-- Hamburger Menu Icon -->
+
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html" class="main-nav-element">Who we are</a></li>
+        <li>
+          <a href="whatwedo.html" class="main-nav-element">What we do</a>
+        </li>
+        <li class="dropdown">
+          <a href="gallery.html" class="main-nav-element dropdown-toggle">Gallery</a>
+        </li>
+        <li>
+          <a href="getinvolved.html" class="main-nav-element">Get involved</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="buttonAndBurgerbutton">
+      <div class="button-frame">
+        <a href="#" class="button main-cta oswald" id="donate-btn">Donate now</a>
       </div>
+      <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="myform" id="donationForm" onsubmit="return validateForm()">
 
-      <!-- Hamburger Menu Icon -->
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name">
+            <small id="firstNameError" class="text-danger">
 
-      <nav class="main-nav" id="main-nav">
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter last name">
+            <small id="lastNameError" class="text-danger"></small>
+          </div>
+          <div class="form-group">
+            <label for="accountNumber">Account Number:</label>
+            <input type="number" class="form-control" id="accountNumber" name="accountNumber"
+              placeholder="Enter account" maxlength="10">
+            <small id="accountNumberError" class="text-danger"></small>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="password" class="form-control" id="cvv" name="cvv" placeholder="Enter CVV">
+            <small id="cvvError" class="text-danger" maxlength="5"></small>
+          </div>
+          <div class="form-group">
+            <label for="cardNumber">Card Number:</label>
+            <input type="number" class="form-control" id="cardNumber" name="cardNumber" maxlength="19"
+              placeholder="Enter your card number">
+            <small id="cardNumberError" class="text-danger"></small>
+          </div>
+          <div class="form-group">
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="date" class="form-control" id="expiryDate" name="expiryDate">
+            <small id="expiryDateError" class="text-danger"></small>
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter amount">
+            <small id="amountError" class="text-danger"></small>
+          </div>
+          <button class="modal-button" type="submit">Donate</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- Main content -->
+
+  <body>
+    <div>
+      <div class="container">
+        <h1>How could you help us to build the future:</h1>
+
         <ul>
-          <li><a href="index.html" class="main-nav-element">Who we are</a></li>
+          <li>Donate financially using our ‘Donate now’ buttons</li>
           <li>
-            <a href="whatwedo.html" class="main-nav-element">What we do</a>
-          </li>
-          <li class="dropdown">
-            <a href="gallery.html" class="main-nav-element dropdown-toggle"
-              >Gallery</a
-            >
+            Sponsor a child for 100GBP a year – contact us for details Donate
+            football kits (boots, jerseys, balls, socks, etc.)
           </li>
           <li>
-            <a href="getinvolved.html" class="main-nav-element">Get involved</a>
+            Help us to develop our IT facilities so we could connect remotely
+            and organize online classes where you could teach our children
+            what is a subject of your expertise!
           </li>
         </ul>
-      </nav>
-      <div class="buttonAndBurgerbutton">
-        <div class="button-frame">
-          <a href="#" class="button main-cta oswald" id="donate-btn"
-            >Donate now</a
-          >
-        </div>
-        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
       </div>
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <form action="" class="myform">
-            <label for="firstName">First Name:</label><br />
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              placeholder="Enter first name"
-              required
-            /><br />
-
-            <label for="lastName">Last Name:</label><br />
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              placeholder="Enter last name"
-              required
-            /><br />
-
-            <label for="accountNumber">Account Number:</label><br />
-            <input
-              type="text"
-              id="accountNumber"
-              name="accountNumber"
-              placeholder="Enter account number"
-              required
-            /><br />
-
-            <label for="cvv">CVV:</label><br />
-            <input
-              type="password"
-              id="cvv"
-              name="cvv"
-              placeholder="Enter CVV"
-              required
-            /><br />
-            <label for="amount">Card Number:</label><br />
-            <input
-              type="number"
-              name="Card number"
-              placeholder="Enter your card number"
-              max="100000000"
-              required
-            /><br />
-            <label for="Expiry datet">Expiry date:</label><br />
-            <input
-              type="date"
-              name="Expiry date"
-              max="100000000"
-              required
-            /><br />
-            <label for="amount">Amount:</label><br />
-            <input
-              type="number"
-              id="amount"
-              name="amount"
-              placeholder="Enter amount"
-              max="100000000"
-              required
-            /><br />
-
-            <button class="modal-button" type="submit">Donate</button>
-          </form>
-        </div>
-      </div>
-    </header>
-    <!-- Main content -->
-    <body>
-      <div>
-        <div class="container">
-          <h1>How could you help us to build the future:</h1>
-
-          <ul>
-            <li>Donate financially using our ‘Donate now’ buttons</li>
-            <li>
-              Sponsor a child for 100GBP a year – contact us for details Donate
-              football kits (boots, jerseys, balls, socks, etc.)
-            </li>
-            <li>
-              Help us to develop our IT facilities so we could connect remotely
-              and organize online classes where you could teach our children
-              what is a subject of your expertise!
-            </li>
-          </ul>
-        </div>
-      </div>
+    </div>
+    <div class="temp">
       <div class="video-container">
-        <iframe
-          src="https://player.vimeo.com/video/926472352?h=096d85d41e"
-          width="640"
-          height="360"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <iframe src="https://player.vimeo.com/video/926472352?h=096d85d41e" width="640" height="360" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
-    </body>
-    <!-- Footer -->
+    </div>
+  </body>
+  <!-- Footer -->
+  <footer class="site-footer">
     <footer class="site-footer">
-      <footer class="site-footer">
-          <div class="footer-content">
-            <section class="contact-info">
-              <h3>Contact Us</h3>
-              <p>Email: springoflifea@gmail.com</p>
-              <p>Phone: +447523280683 / 
-                        +2209959890</p>
-                        <p>Address: Spring of Life Association Gambia (SOLAG)<br>
-                          Sinchu Alagie<br>
-                          West Coast Region<br>
-                          P.O.Box 2562<br>
-                          The Gambia</p>
-            </section>
-            <section class="social-media">
-              <h3>Follow Us</h3>
-              <a href="https://www.facebook.com/SpringofLifeAssociationGambia/">Facebook</a> |
-              <a href="https://www.instagram.com/solag2003?igsh=NHJ6eHlmYWgyb3Iw">Instagram</a>
-            </section>
-          </div>
-          <div class="footer-bottom">
-            <p>&copy; 2024 Spring of Life Association Gambia. All rights reserved.</p>
-          </div>
+      <div class="footer-content">
+        <section class="contact-info">
+          <h3>Contact Us</h3>
+          <p>Email: springoflifea@gmail.com</p>
+          <p>Phone: +447523280683 /
+            +2209959890</p>
+          <p>Address: Spring of Life Association Gambia (SOLAG)<br>
+            Sinchu Alagie<br>
+            West Coast Region<br>
+            P.O.Box 2562<br>
+            The Gambia</p>
+        </section>
+        <section class="social-media">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/SpringofLifeAssociationGambia/">Facebook</a> |
+          <a href="https://www.instagram.com/solag2003?igsh=NHJ6eHlmYWgyb3Iw">Instagram</a>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Spring of Life Association Gambia. All rights reserved.</p>
+      </div>
       </div>
     </footer>
     <script>
@@ -242,6 +226,133 @@
           modal.style.display = "none";
         }
       };
+
+
+      document.getElementById('firstName').addEventListener('input', function () {
+        validateForm();
+      });
+
+      document.getElementById('lastName').addEventListener('input', function () {
+        validateForm();
+      });
+
+
+      document.getElementById('accountNumber').addEventListener('input', function () {
+        validateForm();
+      });
+
+      document.getElementById('cvv').addEventListener('input', function () {
+        validateForm();
+      });
+
+      document.getElementById('cardNumber').addEventListener('input', function () {
+        validateForm();
+      });
+
+      document.getElementById('expiryDate').addEventListener('input', function () {
+        validateForm();
+      });
+
+      document.getElementById('amount').addEventListener('input', function () {
+        validateForm();
+      });
+
+
+
+      // validation function
+      function validateForm() {
+        //getting the form element
+        var form = document.getElementById('donationForm');
+
+
+        //getting values from the form
+        var firstName = form.elements['firstName'].value;
+        var lastName = form.elements['lastName'].value;
+        var accountNumber = form.elements['accountNumber'].value;
+        var cvv = form.elements['cvv'].value;
+        var cardNumber = form.elements['cardNumber'].value;
+        var expiryDate = form.elements['expiryDate'].value;
+        var amount = form.elements['amount'].value;
+
+        //tracking form validation state
+        var isValid = true;
+
+        if (firstName.trim() === '') {
+          document.getElementById('firstNameError').textContent = 'First Name is required';
+          isValid = false;
+        } else {
+          document.getElementById('firstNameError').textContent = '';
+        }
+
+        if (lastName.trim() === '') {
+          document.getElementById('lastNameError').textContent = 'Last Name is required';
+          isValid = false;
+        } else {
+          document.getElementById('lastNameError').textContent = '';
+        }
+
+        if (accountNumber.trim() === '') {
+          document.getElementById('accountNumberError').textContent = 'Account Number is required';
+          isValid = false;
+        } else if (accountNumber.length < 10) {
+          document.getElementById('accountNumberError').textContent = 'Account Number should be 10 digits';
+          isValid = false;
+        }
+        else {
+          document.getElementById('accountNumberError').textContent = '';
+        }
+
+        if (cvv.trim() === '') {
+          document.getElementById('cvvError').textContent = 'CVV is required';
+          isValid = false;
+        } else if (cvv.length < 3 || cvv.length > 5) {
+          document.getElementById('cvvError').textContent = 'CVV should be between 3 and 5 digits';
+          isValid = false;
+        }
+        else {
+          document.getElementById('cvvError').textContent = '';
+        }
+
+        if (cardNumber.trim() === '') {
+          document.getElementById('cardNumberError').textContent = 'Card Number is required';
+          isValid = false;
+        } else if (cardNumber.length < 16 || cardNumber.length > 19) {
+          document.getElementById('cardNumberError').textContent = 'Card Number should be between 16 and 19 digits';
+          isValid = false;
+        }
+        else {
+          document.getElementById('cardNumberError').textContent = '';
+        }
+
+        var currentDate = new Date();
+        var expiredDateToDate = new Date(expiryDate);
+
+
+        console.log(currentDate);
+
+
+        if (expiryDate.trim() === '') {
+          document.getElementById('expiryDateError').textContent = 'Expiry Date is required';
+          isValid = false;
+        } else if (currentDate > expiredDateToDate) {
+          document.getElementById('expiryDateError').textContent = 'Expiry Date should be in the future';
+          isValid = false;
+        }
+        else {
+          document.getElementById('expiryDateError').textContent = '';
+        }
+
+        if (amount.trim() === '') {
+          document.getElementById('amountError').textContent = 'Amount is required';
+          isValid = false;
+        } else {
+          document.getElementById('amountError').textContent = '';
+        }
+
+        return isValid;
+      }
+
     </script>
-  </body>
+</body>
+
 </html>
