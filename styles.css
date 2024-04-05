@@ -52,6 +52,11 @@ html, body {
   text-decoration: none;
   text-transform: uppercase;
   }
+
+  .error {
+    color: red;
+    font-weight: bold; /* Optional: Makes the error message more noticeable */
+  }
   
   .button-frame {
   padding: 2px;
@@ -265,6 +270,8 @@ html, body {
   font-family: 'Montserrat', sans-serif; / Or any other font you prefer */
   font-size: 18px;
   }
+
+
   
   .hero-container {
   position: relative;

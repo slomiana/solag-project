@@ -265,37 +265,50 @@
 
                 //tracking form validation state
                 var isValid = true;
+                var firstNameError = document.getElementById('firstNameError');
+                var lastNameError = document.getElementById('lastNameError');
+                var accountNumberError = document.getElementById('accountNumberError');
+                var cvvError = document.getElementById('cvvError');
+                var cardNumberError = document.getElementById('cardNumberError');
+                var expiryDateError = document.getElementById('expiryDateError');
+                var amountError = document.getElementById('amountError');
 
                 if (firstName.trim() === '') {
-                    document.getElementById('firstNameError').textContent = 'First Name is required';
+                    firstNameError.textContent = 'First Name is required';
+                    firstNameError.classList.add('error');
                     isValid = false;
                 } else {
                     document.getElementById('firstNameError').textContent = '';
                 }
 
                 if (lastName.trim() === '') {
-                    document.getElementById('lastNameError').textContent = 'Last Name is required';
+                    lastNameError.textContent = 'Last Name is required';
+                    lastNameError.classList.add('error');
                     isValid = false;
                 } else {
                     document.getElementById('lastNameError').textContent = '';
                 }
 
                 if (accountNumber.trim() === '') {
-                    document.getElementById('accountNumberError').textContent = 'Account Number is required';
+                    accountNumberError.textContent = 'Account Number is required';
+                    accountNumberError.classList.add('error');
                     isValid = false;
                 } else if (accountNumber.length < 10) {
-                    document.getElementById('accountNumberError').textContent = 'Account Number should be 10 digits';
+                    accountNumberError.textContent = 'Account Number should be 10 digits';
+                    accountNumberError.classList.add('error');
                     isValid = false;
                 }
                 else {
-                    document.getElementById('accountNumberError').textContent = '';
+                    accountNumberError.textContent = '';
                 }
 
                 if (cvv.trim() === '') {
-                    document.getElementById('cvvError').textContent = 'CVV is required';
+                    cvvError.textContent = 'CVV is required';
+                    cvvError.classList.add('error');
                     isValid = false;
                 } else if (cvv.length < 3 || cvv.length > 5) {
-                    document.getElementById('cvvError').textContent = 'CVV should be between 3 and 5 digits';
+                    cvvError.textContent = 'CVV should be between 3 and 5 digits';
+                    cvvError.classList.add('error');
                     isValid = false;
                 }
                 else {
@@ -303,10 +316,12 @@
                 }
 
                 if (cardNumber.trim() === '') {
-                    document.getElementById('cardNumberError').textContent = 'Card Number is required';
+                    cardNumberError.textContent = 'Card Number is required';
+                    cardNumberError.classList.add('error');
                     isValid = false;
                 } else if (cardNumber.length < 16 || cardNumber.length > 19) {
-                    document.getElementById('cardNumberError').textContent = 'Card Number should be between 16 and 19 digits';
+                    cardNumberError.textContent = 'Card Number should be between 16 and 19 digits';
+                    cardNumberError.classList.add('error');
                     isValid = false;
                 }
                 else {
@@ -321,10 +336,12 @@
 
 
                 if (expiryDate.trim() === '') {
-                    document.getElementById('expiryDateError').textContent = 'Expiry Date is required';
+                    expiryDateError.textContent = 'Expiry Date is required';
+                    expiryDateError.classList.add('error');
                     isValid = false;
                 } else if (currentDate > expiredDateToDate) {
-                    document.getElementById('expiryDateError').textContent = 'Expiry Date should be in the future';
+                    expiryDateError.textContent = 'Expiry Date should be in the future';
+                    expiryDateError.classList.add('error');
                     isValid = false;
                 }
                 else {
@@ -332,7 +349,8 @@
                 }
 
                 if (amount.trim() === '') {
-                    document.getElementById('amountError').textContent = 'Amount is required';
+                    amountError.textContent = 'Amount is required';
+                    amountError.classList.add('error');
                     isValid = false;
                 } else {
                     document.getElementById('amountError').textContent = '';
