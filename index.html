@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <!-- Top nav -->
     <header class="site-header">
         <div class="solag-logo-container">
@@ -47,7 +46,7 @@
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <form class="myform" id="donationForm"  onsubmit="return validateForm()">
+                <form class="myform" id="donationForm" onsubmit="return validateForm()">
 
                     <div class="form-group">
                         <label for="firstName">First Name:</label>
@@ -111,36 +110,33 @@
         </div>
     </div>
 
-    <body>
-        <div class="container">
-            <p class="notes">
-            <p>The Spring of Life School (SOLAG) is in the Sinchu Alagie area of the Gambia and was founded in 2015 by
-                three friends Joseph Mendy, Andrew Mendy and Paul Gomez.Their aim was to give children who would not
-                otherwise be able to go to school a chance to access an education and in their words “to narrow the gap
-                between the have and the have nots and help give them a springboard into life”.
+    <div class="container">
+        <p class="notes">
+        <p>The Spring of Life School (SOLAG) is in the Sinchu Alagie area of the Gambia and was founded in 2015 by
+            three friends Joseph Mendy, Andrew Mendy and Paul Gomez.Their aim was to give children who would not
+            otherwise be able to go to school a chance to access an education and in their words “to narrow the gap
+            between the have and the have nots and help give them a springboard into life”.
 
-            <p>There are currently 305 students in the school which caters for Nursery to Grade 6 which is a full
-                primary school cycle in the Gambia.About 100 boys and girls take part at the school football project –
-                Onside United. The area around the school is very poor and the school itself has very few resources.</p>
+        <p>There are currently 305 students in the school which caters for Nursery to Grade 6 which is a full
+            primary school cycle in the Gambia.About 100 boys and girls take part at the school football project –
+            Onside United. The area around the school is very poor and the school itself has very few resources.</p>
 
-            <p>Apart from providing education to the children, SOLAG provides workshops campaigns in local communities
-                against Child marriages and Female Genital Mutilation (FGM).</p>
+        <p>Apart from providing education to the children, SOLAG provides workshops campaigns in local communities
+            against Child marriages and Female Genital Mutilation (FGM).</p>
 
-            <p>Children are given opportunities to develop in many areas such as arts, science and sports.</p>
+        <p>Children are given opportunities to develop in many areas such as arts, science and sports.</p>
 
-            <p>During COVID lockdown we paid teachers’ salaries and have continued to support the school through the
-                provision of much-needed school resources and equipment from tables and chairs to reading books, school
-                bags, textbooks, paints and pencils etc.</p>
+        <p>During COVID lockdown we paid teachers’ salaries and have continued to support the school through the
+            provision of much-needed school resources and equipment from tables and chairs to reading books, school
+            bags, textbooks, paints and pencils etc.</p>
 
-            <p>The school is curre ntly looking for new premises as the landlord has given a notice to leave.At present
-                half the schools are having lessons on the old site while half the schools are having lessons in a new
-                building which is being rented. Unless the school can raise the money to purchase the new building they
-                will have to move again.</p>
-            </p>
+        <p>The school is curre ntly looking for new premises as the landlord has given a notice to leave.At present
+            half the schools are having lessons on the old site while half the schools are having lessons in a new
+            building which is being rented. Unless the school can raise the money to purchase the new building they
+            will have to move again.</p>
+        </p>
 
-        </div>
-
-    </body>
+    </div>
 
 
     <!-- Footer -->
@@ -170,198 +166,8 @@
             </div>
         </footer>
 
-        <script>
-            // Function to open a new page with content "Test" - change it to open a new page in the same tab to avoid opening multiple tabs //
-            function toggleMenu() {
-                var mainNav = document.getElementById('main-nav');
-                mainNav.classList.toggle('collapsing');
-            }
-
-            // Get the modal element
-            var modal = document.getElementById("myModal");
-
-            // Get the button that opens the modal
-            var btn = document.getElementById("donate-btn");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks the button, open the modal
-            btn.onclick = function () {
-                modal.style.display = "block";
-            }
-
-
-            // Get the button that opens the modal
-            var btn2 = document.getElementById("donate-btn2");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks the button, open the modal
-            btn2.onclick = function () {
-                modal.style.display = "block";
-            }
-
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-
-
-            document.getElementById('firstName').addEventListener('input', function () {
-                validateForm();
-            });
-
-            document.getElementById('lastName').addEventListener('input', function () {
-                validateForm();
-            });
-
-
-            document.getElementById('accountNumber').addEventListener('input', function () {
-                validateForm();
-            });
-
-            document.getElementById('cvv').addEventListener('input', function () {
-                validateForm();
-            });
-
-            document.getElementById('cardNumber').addEventListener('input', function () {
-                validateForm();
-            });
-
-            document.getElementById('expiryDate').addEventListener('input', function () {
-                validateForm();
-            });
-
-            document.getElementById('amount').addEventListener('input', function () {
-                validateForm();
-            });
-
-
-
-            // validation function
-            function validateForm() {
-                //getting the form element
-                var form = document.getElementById('donationForm');
-
-
-                //getting values from the form
-                var firstName = form.elements['firstName'].value;
-                var lastName = form.elements['lastName'].value;
-                var accountNumber = form.elements['accountNumber'].value;
-                var cvv = form.elements['cvv'].value;
-                var cardNumber = form.elements['cardNumber'].value;
-                var expiryDate = form.elements['expiryDate'].value;
-                var amount = form.elements['amount'].value;
-
-                //tracking form validation state
-                var isValid = true;
-                var firstNameError = document.getElementById('firstNameError');
-                var lastNameError = document.getElementById('lastNameError');
-                var accountNumberError = document.getElementById('accountNumberError');
-                var cvvError = document.getElementById('cvvError');
-                var cardNumberError = document.getElementById('cardNumberError');
-                var expiryDateError = document.getElementById('expiryDateError');
-                var amountError = document.getElementById('amountError');
-
-                if (firstName.trim() === '') {
-                    firstNameError.textContent = 'First Name is required';
-                    firstNameError.classList.add('error');
-                    isValid = false;
-                } else {
-                    document.getElementById('firstNameError').textContent = '';
-                }
-
-                if (lastName.trim() === '') {
-                    lastNameError.textContent = 'Last Name is required';
-                    lastNameError.classList.add('error');
-                    isValid = false;
-                } else {
-                    document.getElementById('lastNameError').textContent = '';
-                }
-
-                if (accountNumber.trim() === '') {
-                    accountNumberError.textContent = 'Account Number is required';
-                    accountNumberError.classList.add('error');
-                    isValid = false;
-                } else if (accountNumber.length < 10) {
-                    accountNumberError.textContent = 'Account Number should be 10 digits';
-                    accountNumberError.classList.add('error');
-                    isValid = false;
-                }
-                else {
-                    accountNumberError.textContent = '';
-                }
-
-                if (cvv.trim() === '') {
-                    cvvError.textContent = 'CVV is required';
-                    cvvError.classList.add('error');
-                    isValid = false;
-                } else if (cvv.length < 3 || cvv.length > 5) {
-                    cvvError.textContent = 'CVV should be between 3 and 5 digits';
-                    cvvError.classList.add('error');
-                    isValid = false;
-                }
-                else {
-                    document.getElementById('cvvError').textContent = '';
-                }
-
-                if (cardNumber.trim() === '') {
-                    cardNumberError.textContent = 'Card Number is required';
-                    cardNumberError.classList.add('error');
-                    isValid = false;
-                } else if (cardNumber.length < 16 || cardNumber.length > 19) {
-                    cardNumberError.textContent = 'Card Number should be between 16 and 19 digits';
-                    cardNumberError.classList.add('error');
-                    isValid = false;
-                }
-                else {
-                    document.getElementById('cardNumberError').textContent = '';
-                }
-
-                var currentDate = new Date();
-                var expiredDateToDate = new Date(expiryDate);
-
-
-                console.log(currentDate);
-
-
-                if (expiryDate.trim() === '') {
-                    expiryDateError.textContent = 'Expiry Date is required';
-                    expiryDateError.classList.add('error');
-                    isValid = false;
-                } else if (currentDate > expiredDateToDate) {
-                    expiryDateError.textContent = 'Expiry Date should be in the future';
-                    expiryDateError.classList.add('error');
-                    isValid = false;
-                }
-                else {
-                    document.getElementById('expiryDateError').textContent = '';
-                }
-
-                if (amount.trim() === '') {
-                    amountError.textContent = 'Amount is required';
-                    amountError.classList.add('error');
-                    isValid = false;
-                } else {
-                    document.getElementById('amountError').textContent = '';
-                }
-
-                return isValid;
-            }
-
-
-        </script>
-
+        <script src="./javascript.js"></script>
+        <script src="./validation.js"></script>
 </body>
 
 </html>

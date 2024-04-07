@@ -4,21 +4,15 @@ html, body {
   height: 100%;
   }
   
-  /**************FONTS/
+  /*FONTS*/
   
-  .flavors-regular {
-  font-family: "Flavors",
-  font-weight: 400;
-  font-style: normal;
-  }
   
-  /****************/
-  
-  h2, h3, h4, h5, h6, p, ul li, a{
+  h2, h3, h4, h5, h6, p, ul li, a, br{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   padding-top: 3px
   }
+
   
   body h1 {
     padding-top:50px;
@@ -55,7 +49,7 @@ html, body {
 
   .error {
     color: red;
-    font-weight: bold; /* Optional: Makes the error message more noticeable */
+    font-weight: bold; 
   }
   
   .button-frame {
@@ -75,24 +69,20 @@ html, body {
   }
   
   .main-nav-element {
-  font-size: 25px; /* Adjust the size as needed /
-  color: #000; / Set your desired color /
-  text-decoration: none; / Removes underline from links /
-  padding: 10px; / Adds padding around the links for easier clicking /
-  display: block; / Makes the entire area clickable */
+  font-size: 25px; 
+
   margin-right: 70px;
   font-family: 'Montserrat', sans-serif;
   }
   
   .main-nav ul {
-  list-style-type: none; /* Removes bullet points /
-  padding: 0; / Removes default padding /
-  margin: 0; / Removes default margin */
+  list-style-type: none; 
+
   }
   
   .main-nav li {
-  display: inline-block; /* Aligns items horizontally, adjust as needed /
-  margin-right: 20px; / Adds spacing between items, adjust as needed */
+  display: inline-block; 
+  margin-right: 20px; 
   }
   
   .main-nav {
@@ -101,13 +91,7 @@ html, body {
   font-size: 18px;
   padding: 15px 0;
   }
-  /***************************************/
-  /* .video-container { */
-    /* position: relative; */
-    /* width: 100%; */
-    /* padding-bottom: 56.25%; 16:9 aspect ratio */
-    /* overflow: hidden; */
-/* } */
+
 
 .video-container iframe {
     position: absolute;
@@ -265,9 +249,7 @@ html, body {
   text-align: center;
   line-height: 50px;
   text-decoration: none;
-  margin: 20px auto; /* Adjust margin as needed /
-  border-radius: 5px;
-  font-family: 'Montserrat', sans-serif; / Or any other font you prefer */
+  margin: 20px auto;
   font-size: 18px;
   }
 
@@ -275,34 +257,26 @@ html, body {
   
   .hero-container {
   position: relative;
-  width: 100%; /* Adjust based on your requirement */
+  width: 100%; 
   height: auto;
   }
   
   .hero-image, .overlay {
   width: 100%;
   height: auto;
-  /* height: ; or 100% based on your design */
   }
   
   .inset-div {
   position: absolute;
   margin-left: 1%;
-  top: 30%; /* Adjust as needed /
-  background-color: rgba(255,255,255,0.9);
-  margin: 25px 25px 0 0;
-  padding: 25px;
-  color: black; / Adjust text color based on your design /
-  width: 380px; / Adjust based on your design /
-  height: 230px;
-  padding: 4%; / Gives some padding inside the div */
+  top: 30%; 
   box-shadow: 0 0 5px rgba(0,0,0,.75);
   }
   
   h1 {
   margin-top: 5px;
   margin-bottom: 20px;
-  font-size: 32px;
+  font-size: 35px;
   line-height: 85%;
   font-weight: bold;
   text-align: left;
@@ -443,15 +417,12 @@ img.hover-shadow {
   
   .site-footer {
   color: white ;
-  background-color: #333; /* Dark background for the footer /
-  padding: 20px; / Padding inside the footer /
-  font-size: 14px; / Smaller text size */
+  background-color: #333; 
   }
   
   .footer-content {
   display: flex;
-  justify-content: space-around; /* Distributes sections evenly /
-  flex-wrap: wrap; / Allows items to wrap on small screens */
+  justify-content: space-around;
   }
   
   .footer-content section {
@@ -459,18 +430,16 @@ img.hover-shadow {
   }
   
   .footer-links ul {
-  list-style: none; /* Removes default list styling */
+  list-style: none; 
   padding: 0;
   }
   
   .footer-links ul li a {
-  color: white; /* Ensures links are also white /
-  text-decoration: none; / Removes underline from links */
+  color: white; 
   }
   
   .footer-bottom {
-  text-align: center; /* Centers the copyright text /
-  margin-top: 0px; / Adds space above the copyright text */
+  text-align: center; 
   }
   
   .social-media a {
@@ -530,9 +499,7 @@ img.hover-shadow {
   
   @media screen and (max-width: 768px) {
   .hamburger-menu {
-  display: block; /* Show the hamburger icon on small screens /
-  cursor: pointer;
-  font-size: 30px; / Icon size */
+  display: block; 
   color: white;
   background-color:#0397d6;
   padding:10px;
@@ -621,7 +588,13 @@ img.hover-shadow {
    .hero-image, .overlay {
     height: auto;
   }
-  
+
+  @media screen and (max-width: 768px) {
+    .donate-button {
+      margin-top: 70px; /* Adjust this value to create space */
+    }
+  }
+
   .inset-div {
     position: static;
     width: auto;
