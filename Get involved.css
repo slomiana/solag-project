@@ -1,0 +1,46 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-left: 10px green solid;
+    border-bottom: 10px green solid;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 70px;
+  }
+  .container p {
+    padding: 30px;
+    line-height: 2;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  li {
+    font-size: 18px;
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      text-align: center;
+      font-size: 35px;
+      padding-top: 50px;
+    }
+    p {
+      font-size: 18px;
+      padding: 10px;
+      line-height: 1;
+    }
+    li {
+      font-size: 18px;
+    }
+  }
+  

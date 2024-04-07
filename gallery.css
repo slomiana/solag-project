@@ -6,7 +6,7 @@
   .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center align items horizontally */
+    justify-content: center; 
   }
   
   .row:after {
@@ -19,16 +19,16 @@
   /* Add margin and set width for columns to space out images */
 .col {
     float: left;
-    width: 22%; /* Adjust this value as needed */
-    box-sizing: border-box; /* Include padding in width calculation */
+    width: 22%; 
+    box-sizing: border-box;
     text-align: center;
   }
   
  /* Ensure all images fill their containers */
 .col img {
-    display: block; /* Ensure images are block elements */
-    margin: 0 auto; /* Center align images horizontally */
-    max-width: 100%; /* Ensure images don't exceed their container's width */
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
   }
   
   .row::after {
@@ -152,7 +152,7 @@
 
   .col img {
     max-width: 100%;
-    height: 300px; /* Adjust the height as needed */
-    object-fit: cover; /* Cover the entire space while maintaining aspect ratio */
+    height: 300px; 
+    object-fit: cover; 
   }
   
