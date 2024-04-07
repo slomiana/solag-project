@@ -608,7 +608,7 @@ img.hover-shadow {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 10px; /* Adjust as needed */
+        margin-top: 5px; /* Adjust as needed */
     }
 }
 
